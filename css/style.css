@@ -19,7 +19,7 @@
     background-image: url(../img/Bg.jpg);
     background-size: cover;
     background-position: 0px -200px;
-    height: 620px;
+    height: 520px;
     margin-top: -75px;
 }
 
@@ -32,7 +32,7 @@
 }
 
 #about{
-    height: 300px;
+    height: 280px;
 }
 
 #portfolio{
@@ -42,6 +42,21 @@
     background-position: 0 -200px;
     height: 500px;
     color: white;
+}   
+
+#portfolio h1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#portfolio .card{
+    max-width: 250px;
+    margin-left: 45px;
+}
+
+#contact h1{
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 }
@@ -50,7 +65,7 @@
 .jumbotron{
     background-image: url(../img/Bg.jpg);
     background-size: cover;
-    height: 520px;
+    height: 580px;
 }
 
 .jumbotron h1{

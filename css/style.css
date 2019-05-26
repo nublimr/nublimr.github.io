@@ -1,71 +1,3 @@
-@media (min-width: 992px) {
-
-.navbar-brand{
-    font-family: 'Viga',sans-serif;
-    font-size: 32px;
-}
-    
-.navbar-brand, .nav-link{
-     color: white !important ;
-     text-shadow: 1px 1px 1px rgba(0,0,0,0.4)
-}
-    
- .nav-link{
-    margin-right: 30px;
-    text-transform: uppercase;
-}
-
-.jumbotron{
-    background-image: url(../img/Bg.jpg);
-    background-size: cover;
-    background-position: 0px -200px;
-    height: 520px;
-    margin-top: -75px;
-}
-
-.jumbotron h1{
-    font-size: 62px;
-}
-
-.jumbotron img{
-    margin-top: 50px;
-}
-
-#about{
-    height: 280px;
-}
-
-#portfolio{
-    background-image: url(../img/Bg.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 0 -200px;
-    height: 480px;
-    color: white;
-}   
-
-#portfolio h1{
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.gallery img {
-    margin: auto;
-    padding: 5px;
-}
-
-#contact{
-    height: 610px;
-}
-
-#contact h1{
-    padding-top:40px;
-    padding-bottom:40px;
-}
-
-}
-/* Responsive Line */
-
 .jumbotron{
     background-image: url(../img/Bg.jpg);
     background-size: cover;
@@ -78,7 +10,92 @@
     color: white;
 }
 
-.gallery img {
-    margin: auto;
-    padding: 5px;
+#portfolio{
+    background-image: url(../img/Bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 580px;
+    color: white;
+}  
+
+.gallery img{
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 200px;
 }
+
+@media (min-width: 992px) {
+
+    .navbar-brand{
+        font-family: 'Viga',sans-serif;
+        font-size: 32px;
+    }
+        
+    .navbar-brand, .nav-link{
+         color: white !important ;
+         text-shadow: 1px 1px 1px rgba(0,0,0,0.4)
+    }
+        
+     .nav-link{
+        margin-right: 30px;
+        text-transform: uppercase;
+    }
+    
+    .jumbotron{
+        background-image: url(../img/Bg.jpg);
+        background-size: cover;
+        background-position: 0px -200px;
+        height: 520px;
+        margin-top: -75px;
+    }
+    
+    .jumbotron h1{
+        font-size: 62px;
+    }
+    
+    .jumbotron img{
+        margin-top: 50px;
+    }
+    
+    #about{
+        height: 280px;
+    }
+    
+    #portfolio{
+        background-image: url(../img/Bg.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: 0 -200px;
+        height: 480px;
+        color: white;
+    }   
+    
+    #portfolio h1{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    
+    .gallery img {
+        width: 250px;
+        margin-left: 10px;
+        padding: 5px;
+        filter: grayscale(100%);
+        transition: 2s;
+    }
+    
+    .gallery img:hover{
+        filter: grayscale(0);
+    }
+    
+    #contact{
+        height: 610px;
+    }
+    
+    #contact h1{
+        padding-top:40px;
+        padding-bottom:40px;
+    }
+    
+    }
+    /* Responsive Line */

@@ -24,6 +24,11 @@
     width: 200px;
 }
 
+
+
+
+
+    /* Responsive Line */
 @media (min-width: 992px) {
 
     .navbar-brand{
@@ -37,6 +42,7 @@
     }
         
      .nav-link{
+        color: rgb(19, 18, 18) !important;
         margin-right: 30px;
         text-transform: uppercase;
     }
@@ -77,8 +83,8 @@
     
     
     .gallery img {
-        width: 250px;
-        margin-left: 10px;
+        width: 255px;
+        margin-left: 15px;
         padding: 5px;
         filter: grayscale(100%);
         transition: 2s;
@@ -98,4 +104,3 @@
     }
     
     }
-    /* Responsive Line */

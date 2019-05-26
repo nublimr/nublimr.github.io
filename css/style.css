@@ -49,9 +49,9 @@
     padding-bottom: 40px;
 }
 
-#portfolio .card{
-    max-width: 250px;
-    margin-left: 45px;
+.gallery img {
+    margin: auto;
+    padding: 5px;
 }
 
 #contact{
@@ -76,4 +76,9 @@
     font-size: 50px;
     margin-top: 30px;
     color: white;
+}
+
+.gallery img {
+    margin: auto;
+    padding: 5px;
 }

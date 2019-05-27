@@ -13,3 +13,16 @@ $(window).scroll(function(){
         $('.navbar').css('box-shadow','0 2px 4px -1px rgba(0,0,0,0.25)');
     }
 });
+
+$(window).scroll(function() {
+    var wScroll = $(this).scrollTop();
+
+    $('.jumbotron img').css({
+        'transform' : 'translate(0px, '+ wScroll/2.7 +'%)'
+    });
+
+    $('.jumbotron h1').css({
+        'transform' : 'translate(0px, '+ wScroll/1.2 +'%)'
+    });
+
+});

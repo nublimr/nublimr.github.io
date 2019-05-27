@@ -63,6 +63,7 @@
         background-position: 0px -200px;
         height: 620px;
         margin-top: -75px;
+        overflow: hidden;
     }
     
     .jumbotron h1{

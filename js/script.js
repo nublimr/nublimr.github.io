@@ -1,6 +1,6 @@
 $(window).scroll(function(){
     var scroll = $(window).scrollTop();
-    if(scroll < 410){
+    if(scroll < 360){
         $('.fixed-top').css('background', 'transparent');
         $('.navbar-brand').css('color', 'white','!important');
         $('.navbar-brand').css('font-size', '40px');

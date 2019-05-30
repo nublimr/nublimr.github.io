@@ -92,9 +92,8 @@
         padding-bottom: 40px;
     }   
     
-    
     .gallery img {
-        width: 255px;
+        width: 200px;
         margin-left: 15px;
         padding: 5px;
         filter: grayscale(100%);

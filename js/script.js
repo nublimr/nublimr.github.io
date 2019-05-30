@@ -1,6 +1,6 @@
 $(window).scroll(function(){
     var scroll = $(window).scrollTop();
-    if(scroll < 360){
+    if(scroll < 150){
         $('.fixed-top').css('background', 'transparent');
         $('.navbar-brand').css('color', 'white','!important');
         $('.navbar-brand').css('font-size', '40px');
@@ -16,13 +16,16 @@ $(window).scroll(function(){
 
 $(window).scroll(function() {
     var wScroll = $(this).scrollTop();
-
+    console.log(wScroll);
+    
     $('.jumbotron img').css({
-        'transform' : 'translate(0px, '+ wScroll/2.7 +'%)'
+        'transform' : 'translate(0px, '+ wScroll/2.7 +'%)',
+        'opacity' : '0.'+ (90-wScroll)
     });
 
     $('.jumbotron h1').css({
-        'transform' : 'translate(0px, '+ wScroll/1.2 +'%)'
+        'transform' : 'translate(0px, '+ wScroll/1.2 +'%)',
+        'opacity' : '0.'+ (90-wScroll)
     });
 
 });

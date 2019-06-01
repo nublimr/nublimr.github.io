@@ -20,17 +20,17 @@ $(window).scroll(function() {
 
     $('.jumbotron img').css({
         'transform' : 'translate(0px, '+ wScroll/2.7 +'%)',
-        'opacity' : '0.'+ (900-wScroll)
+        'opacity' : 1-(wScroll/1000)
     });
 
     $('.jumbotron h1').css({
         'transform' : 'translate(0px, '+ wScroll/1.2 +'%)',
-        'opacity' : '0.'+ (900-wScroll)
+        'opacity' : 1-(wScroll/1000)
     });
 
     $('.jumbotron p').css({
         'transform' : 'translate(0px, '+ wScroll/0.45 +'%)',
-        'opacity' : '0.'+ (900-wScroll)
+        'opacity' : 1-(wScroll/1000)
     });
 
 });

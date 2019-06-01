@@ -17,15 +17,20 @@ $(window).scroll(function(){
 $(window).scroll(function() {
     var wScroll = $(this).scrollTop();
     console.log(wScroll);
-    
+
     $('.jumbotron img').css({
         'transform' : 'translate(0px, '+ wScroll/2.7 +'%)',
-        'opacity' : '0.'+ (90-wScroll)
+        'opacity' : '0.'+ (900-wScroll)
     });
 
     $('.jumbotron h1').css({
         'transform' : 'translate(0px, '+ wScroll/1.2 +'%)',
-        'opacity' : '0.'+ (90-wScroll)
+        'opacity' : '0.'+ (900-wScroll)
+    });
+
+    $('.jumbotron p').css({
+        'transform' : 'translate(0px, '+ wScroll/0.45 +'%)',
+        'opacity' : '0.'+ (900-wScroll)
     });
 
 });

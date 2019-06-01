@@ -1,3 +1,18 @@
+<?php
+  if (isset($_POST['submit'] )) {
+    $name=$_POST['name'];
+    $email=$_POST['email'];
+    $phone=$_POST['phone'];
+    $msg=$_POST['message'];
+
+    $to='nubliezrapat@gmail.com';
+    $subject='Form Submission';
+    $message="Nama : ".$name."\nNo. Handphone : ".$phone."\nPesan \n'".$msg."'";
+    $headers="form : ".$email;
+
+    mail($to,$subject,$message,$headers);
+  }
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -98,23 +113,27 @@
               </ul>
             </div>
             <div class="col-md-8">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="name" class="form-control" id="name" placeholder="Your Name">
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="name@example.com">
-              </div>
-              <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" class="form-control" id="phone" placeholder="Your Number">
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
-              </div>
-              <button class="btn btn-primary">Submit</button>
+              <form action="" method="post">
+                <ul>
+                  <li><div class="form-group">
+                    <label for="name">Name</label>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name">
+                  </div></li>
+                  <li><div class="form-group">
+                    <label for="email">Email</label>
+                    <input name="email"type="text" class="form-control" id="email" placeholder="name@example.com">
+                  </div></li>
+                  <li><div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input name="phone" type="tel" class="form-control" id="phone" placeholder="Your Number">
+                  </div></li>
+                  <li><div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message"class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+                  </div></li>
+                  <li><button type="submit" name="submit" class="btn btn-primary">Submit</button></li>
+                </ul>
+              </form>
             </div>
           </div>
       </div>

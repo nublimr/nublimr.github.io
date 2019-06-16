@@ -1,160 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Lily+Script+One|Merienda:400,700|Oleo+Script:400,700&display=swap');
+
+.fixed-top{
+    height: 50px;
+}
+
 .navbar-brand{
-    font-family: 'Viga',sans-serif;
+    height: 50px;
+    margin-top: 25px;
+    font-family: 'Lily Script One', cursive;
+    letter-spacing: 3px;
 }
 
-.jumbotron{
-    background-image: url(../img/Bg.jpg);
+.nav-item{
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#particles-js{
+    background: url(../img/BackJumbotron.jpg) no-repeat center center fixed;
     background-size: cover;
-    height: 567px;
+    background-position-y: -500px;
+    height: 605px;
+    color: white;
+    text-shadow: 1px 1px 3px #000;
     overflow: hidden;
 }
 
-.fullscreen-video-wrap{
+.skill{
     position: absolute;
-    top: 0;
-    left: 0;
+    margin: auto;
+    margin-top: 80px;
     width: 100%;
-    height: 100vh;
+    height: 500px;
     overflow: hidden;
 }
 
-.fullscreen-video-wrap video{
-    min-width: 100%;
-    min-height: 100%;
+.skill h1{
+    font-family: 'Oleo Script', cursive;
 }
 
-.header-overlay{
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: black;
-    opacity: .4;
+.skill p{
+    font-family: 'Merienda', cursive;
 }
 
-.jumbotron img{
-    margin-top: 60px;
+.skill img{
+    width: 45px;
+    height: 45px;
+    padding: 8px;
+    filter: drop-shadow(2px 2px 3px #000);
+    -webkit-filter: drop-shadow(2px 2px 3px #000);
 }
 
-.jumbotron h1{
-    font-size: 50px;
-    margin-top: 30px;
-    color: white;
+.linegra{
+    background-color: transparent;
+    background-image: url(../img/linegra.png);
+    height: 200px;
+    margin-top: -200px;
+    position: relative;
 }
 
-.jumbotron p{
-    color: white;
-}
-
-#portfolio{
-    background-image: url(../img/Bg.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    height: 580px;
-    color: white;
-}
-
-.gallery img{
-    margin-left: 20px;
+.resume{
     margin-top: 10px;
-    width: 200px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border: #ccc 1px solid;
+    padding: 5px;
+    border-radius: 8px;
 }
 
-.navbar{
+.resume:hover{
     background-color: white;
+    color: black;
+}
+
+.modal-body{
+    width: 100%;
+    height: 1100px;
+    background-image: url(../img/resume.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#project h1{
+    margin-bottom: 50px;
+}
+
+.card{
+    -webkit-box-shadow: 7px 7px 5px -5px rgba(0,0,0,0.5);
+    -moz-box-shadow: 7px 7px 5px -5px rgba(0,0,0,0.5);
+    box-shadow: 7px 7px 5px -5px rgba(0,0,0,0.5);
 }
 
 
-
-
-    /* Responsive Line */
-    @media (min-width: 992px) {
-
-    .navbar{
-        background-color: rgba(0,0,0,0);
-    }
-
-    .navbar-brand{
-        font-family: 'Viga',sans-serif;
-        font-size: 32px;
-    }
-
-    .navbar-brand, .nav-link{
-         text-shadow: 1px 1px 1px rgba(0,0,0,0.4)
-    }
-
-    .nav-link{
-        color: rgb(19, 18, 18) !important;
-        margin-right: 30px;
-        text-transform: uppercase;
-    }
-
-    .jumbotron{
-        background-image: url(../img/Bg.jpg);
-        background-size: cover;
-        background-position: 0px -200px;
-        height: 737px;
-        margin-top: -75px;
-        overflow: hidden;
-    }
-
-    .jumbotron h1{
-        font-size: 62px;
-    }
-
-    .jumbotron img{
-        margin-top: 120px;
-    }
-
-    #about{
-        height: 480px;
-    }
-
-    #about img:hover{
-        transition: 0.5s;
-        transform : scale(1.17);
-        box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.25);
-    }
-
-    #portfolio{
-        background-image: url(../img/Bg.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: 0 -200px;
-        height: 480px;
-        color: white;
-    }
-
-    #portfolio h1{
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-
-    #portfolio img{
-        width: 250px;
-        height: 200px;
-    }
-
-    .gallery img {
-        width: 180px;
-        margin-left: 15px;
-        padding: 5px;
-        filter: grayscale(100%);
-        transition: 2s;
-    }
-
-    .gallery img:hover{
-        filter: grayscale(0);
-    }
-
-    #contact{
-        height: 610px;
-    }
-
-    #contact h1{
-        padding-top:40px;
-        padding-bottom:40px;
-    }
-
-    }
+.card img{
+    width: 100%;
+    height: 150px;
+    margin-bottom: -10px;
+}

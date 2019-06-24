@@ -12,7 +12,7 @@
   <title>Nakira Landing Page</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbarNavAltMarkup">
 
   <div  id="skill" class="container">
     <!-- Navbar -->
@@ -30,8 +30,9 @@
           <div class="navbar-nav ml-auto">
             <a class="nav-item nav-link" href="#skill">Skill</a>
             <a class="nav-item nav-link" href="#project">Project</a>
-            <a class="nav-item nav-link" href="#about">About</a>
+            <a class="nav-item nav-link" href="#certificate">Certificate</a>
             <a class="nav-item nav-link" href="#contact">Contact</a>
+            <a class="nav-item nav-link" href="#footer"></a>
           </div>
         </div>
       </div>
@@ -69,7 +70,7 @@
       <button class="btn resume" data-toggle="modal" data-target=".bd-example-modal-lg">Resume</button>
     </div>
   </div>
-  <div  id="project" class="linegra"></div>
+  <div id="project" class="linegra"></div>
 
 
   <!-- Resume PopUp -->
@@ -81,7 +82,9 @@
           <h5 class="modal-title text-center" id="exampleModalLabel">Resume</h5>
           <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Close</button>
         </div>
-        <div class="modal-body"></div>
+        <div class="modal-body">
+          <img src="img/resume.png" alt="" srcset="">
+        </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary">Download Resume</button>
         </div>
@@ -92,110 +95,87 @@
   <!-- Akhir Jumbotron -->
 
   <!-- Project -->
-  <section>
-
-    <h1 class=" text-center">Projects</h1>
-
+  <section id="pro">
+    <h1 class="text-center">Projects</h1>
     <div class="container">
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="card" style="width: 16rem;">
-            <img src="img/janken.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5>Games : Jan Ken Pon</h5>
-              <p><small>Simple Games To You</small></p>
-              <button class="btn btn-primary">Code</button>
-              <button class="btn btn-primary">View</button>
+      <div class=""><a data-toggle="modal" data-target="#exampleModalCenter"><img src="img/janken.png" alt=""></a></div>
+      <div class=""><a data-toggle="modal" data-target="#exampleModalCenter"><img src="img/janken.png" alt=""></a></div>
+      <div class=""><a data-toggle="modal" data-target="#exampleModalCenter"><img src="img/janken.png" alt=""></a></div>
+      <div class=""><a data-toggle="modal" data-target="#exampleModalCenter"><img src="img/janken.png" alt=""></a></div>
+      <div class=""><a data-toggle="modal" data-target="#exampleModalCenter"><img src="img/janken.png" alt=""></a></div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Fun Game: Jan-Ken-Pon</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="img/janken.png" alt="">
+                </div>
+                <div class="col-md-6">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="card" style="width: 16rem;">
-            <img src="img/janken.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5>Games : Jan Ken Pon</h5>
-              <p><small>Simple Games To You</small></p>
-              <button class="btn btn-primary">Code</button>
-              <button class="btn btn-primary">View</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="card" style="width: 16rem;">
-            <img src="img/janken.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5>Games : Jan Ken Pon</h5>
-              <p><small>Simple Games To You</small></p>
-              <button class="btn btn-primary">Code</button>
-              <button class="btn btn-primary">View</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="card" style="width: 16rem;">
-            <img src="img/janken.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5>Games : Jan Ken Pon</h5>
-              <p><small>Simple Games To You</small></p>
-              <button class="btn btn-primary">Code</button>
-              <button class="btn btn-primary">View</button>
-            </div>
-          </div>
+          <div class="modal-footer">
+            <a href="github.com"><button class="btn btn-primary" type="button">Source Code</button></a>
+            <a href="portfolio/Jangken/index.html"><button class="btn btn-success" type="button">Demo</button></a>
           </div>
         </div>
       </div>
     </div>
-
-  </section>
   <!-- Akhir Project -->
-<!--
-  <form action="MAILTO:nubliezrapat@gmail.com" method="post" enctype="text/plain">
-    <input type="text" value="anjay">
-  <input type="submit" value="send">
-  </form> -->
 
-  <div id="contact">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil impedit est officia nisi, sed veniam sint natus
-      perferendis et error quasi, provident minima eveniet ratione ut quos illum asperiores molestiae voluptas. Unde
-      quae iste temporibus ad hic eius neque repellat nihil eos deleniti, sed facilis? Voluptas repellendus amet
-      consectetur at dicta assumenda tempore, iure officia odit aspernatur. Nesciunt facilis et atque iusto quidem nobis
-      deserunt voluptates quasi temporibus, harum magnam dignissimos aspernatur, nostrum, voluptas sequi dicta incidunt
-      eaque at ipsa inventore quia assumenda nemo! Praesentium aperiam quia culpa eaque repellendus adipisci velit,
-      assumenda nemo esse eos quaerat, dolor necessitatibus reprehenderit vero qui incidunt. Optio inventore laboriosam
-      accusamus quos neque quisquam.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil impedit est officia nisi, sed veniam sint natus
-      perferendis et error quasi, provident minima eveniet ratione ut quos illum asperiores molestiae voluptas. Unde
-      quae iste temporibus ad hic eius neque repellat nihil eos deleniti, sed facilis? Voluptas repellendus amet
-      consectetur at dicta assumenda tempore, iure officia odit aspernatur. Nesciunt facilis et atque iusto quidem nobis
-      deserunt voluptates quasi temporibus, harum magnam dignissimos aspernatur, nostrum, voluptas sequi dicta incidunt
-      eaque at ipsa inventore quia assumenda nemo! Praesentium aperiam quia culpa eaque repellendus adipisci velit,
-      assumenda nemo esse eos quaerat, dolor necessitatibus reprehenderit vero qui incidunt. Optio inventore laboriosam
-      accusamus quos neque quisquam.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil impedit est officia nisi, sed veniam sint natus
-      perferendis et error quasi, provident minima eveniet ratione ut quos illum asperiores molestiae voluptas. Unde
-      quae iste temporibus ad hic eius neque repellat nihil eos deleniti, sed facilis? Voluptas repellendus amet
-      consectetur at dicta assumenda tempore, iure officia odit aspernatur. Nesciunt facilis et atque iusto quidem nobis
-      deserunt voluptates quasi temporibus, harum magnam dignissimos aspernatur, nostrum, voluptas sequi dicta incidunt
-      eaque at ipsa inventore quia assumenda nemo! Praesentium aperiam quia culpa eaque repellendus adipisci velit,
-      assumenda nemo esse eos quaerat, dolor necessitatibus reprehenderit vero qui incidunt. Optio inventore laboriosam
-      accusamus quos neque quisquam.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil impedit est officia nisi, sed veniam sint natus
-      perferendis et error quasi, provident minima eveniet ratione ut quos illum asperiores molestiae voluptas. Unde
-      quae iste temporibus ad hic eius neque repellat nihil eos deleniti, sed facilis? Voluptas repellendus amet
-      consectetur at dicta assumenda tempore, iure officia odit aspernatur. Nesciunt facilis et atque iusto quidem nobis
-      deserunt voluptates quasi temporibus, harum magnam dignissimos aspernatur, nostrum, voluptas sequi dicta incidunt
-      eaque at ipsa inventore quia assumenda nemo! Praesentium aperiam quia culpa eaque repellendus adipisci velit,
-      assumenda nemo esse eos quaerat, dolor necessitatibus reprehenderit vero qui incidunt. Optio inventore laboriosam
-      accusamus quos neque quisquam.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil impedit est officia nisi, sed veniam sint natus
-      perferendis et error quasi, provident minima eveniet ratione ut quos illum asperiores molestiae voluptas. Unde
-      quae iste temporibus ad hic eius neque repellat nihil eos deleniti, sed facilis? Voluptas repellendus amet
-      consectetur at dicta assumenda tempore, iure officia odit aspernatur. Nesciunt facilis et atque iusto quidem nobis
-      deserunt voluptates quasi temporibus, harum magnam dignissimos aspernatur, nostrum, voluptas sequi dicta incidunt
-      eaque at ipsa inventore quia assumenda nemo! Praesentium aperiam quia culpa eaque repellendus adipisci velit,
-      assumenda nemo esse eos quaerat, dolor necessitatibus reprehenderit vero qui incidunt. Optio inventore laboriosam
-      accusamus quos neque quisquam.</p>
+  <section id="certificate">
+    <div class="cerf">
+      <h1>Certificates</h1>
+    </div>
+  </section>
+
+  <div class="contact">
+    <div class="container">
+      <h1 class="text-center" id="contact">Contact</h1>
+      <div class="row"">
+        <div class="col-md-6">
+
+        </div>
+        <div class="col-md-6 form">
+          <div class="row">
+            <div class="col-6">
+              <form action="MAILTO:nubliezrapat@gmail.com" method="post" enctype="text/plain">
+              <div class="form-group">
+                <input id="name" class="form-control" type="text" name="name" placeholder="Your Name..">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <input id="email" class="form-control" type="text" name="email" placeholder="Email">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea id="message" class="form-control" name="message" rows="3" placeholder="Your Message"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit" value="send">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <footer id="footer">
+    <p>Anjay</p>
+  </footer>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="js/jquery.min.js"></script>

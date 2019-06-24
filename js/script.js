@@ -4,18 +4,18 @@ $(window).scroll(function(){
         $('.fixed-top').css({'background': 'transparent'});
         $('.navbar').css('box-shadow','0px 0px rgba(0, 0, 0, 0)');
         $('.navbar-brand, .nav-item').css({'color' : 'white','text-shadow' : '1px 1px 10px #000'});
+        $('.active').css({'color' : '#90CAF9'});
         $('.fixed-top').css('transition', '.7s');
     } else{
         $('.fixed-top').css({'background' : 'rgba(255, 255, 255, 1)'});
         $('.navbar').css('box-shadow','0 2px 4px -1px rgba(0,0,0,0.25)');
-        $('.navbar-brand, .nav-item').css({'color' : 'black','text-shadow' : 'unset'});
+        $('.navbar-brand, .nav-item').css({'color': 'black','text-shadow': 'unset'});
+        $('.active').css({'color' : '#64B5F6'});
     }
 });
 
 $(window).scroll(function() {
     var wScroll = $(this).scrollTop();
-    console.log(wScroll);
-
     $('#particles-js img').css({
         'transform' : 'translate(0px, '+ wScroll/.5 +'%)',
         'opacity' : 1-(wScroll/350),

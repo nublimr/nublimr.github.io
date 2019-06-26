@@ -6,15 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="css\bootstrap.min.css">
-  <link rel="stylesheet" href="css\style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="css/mdb.min.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/all.min.js"></script>
 
   <title>Nakira Landing Page</title>
 </head>
 
 <body data-spy="scroll" data-target="#navbarNavAltMarkup">
 
-  <div  id="skill" class="container">
+  <div id="skill" class="container">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-light fixed-top" id="navport" role="tablist">
       <div class="container">
@@ -43,7 +46,7 @@
   <!-- Jumbotron -->
   <div id="particles-js">
     <div class="skill text-center">
-      <h1>Junior Web & Software Developer</h1>
+      <h1>Junior Web Developer</h1>
       <p>College</p>
       <div class="lang">
         <img data-toggle="tooltip" data-placement="top" title="HTML" src="img/Language/html5.png">
@@ -80,10 +83,12 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title text-center" id="exampleModalLabel">Resume</h5>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Close</button>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
         <div class="modal-body">
-          <img src="img/resume.png" alt="" srcset="">
+          <img class="img-fluid" src="img/resume.png" alt="" srcset="">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary">Download Resume</button>
@@ -106,76 +111,115 @@
     </div>
   </section>
 
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalCenterTitle">Fun Game: Jan-Ken-Pon</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                  <img src="img/janken.png" alt="">
-                </div>
-                <div class="col-md-6">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                </div>
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Fun Game: Jan-Ken-Pon</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="img-fluid" src="img/janken.png" alt="">
+              </div>
+              <div class="col-md-6">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
               </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <a href="github.com"><button class="btn btn-primary" type="button">Source Code</button></a>
-            <a href="portfolio/Jangken/index.html"><button class="btn btn-success" type="button">Demo</button></a>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="github.com"><button class="btn btn-primary" type="button">Source Code</button></a>
+          <a href="portfolio/Jangken/index.html"><button class="btn btn-success" type="button">Demo</button></a>
         </div>
       </div>
     </div>
+  </div>
   <!-- Akhir Project -->
 
   <section id="certificate">
     <div class="cerf">
       <h1>Certificates</h1>
     </div>
+    <div class="certif">
+
+    </div>
   </section>
 
-  <div class="contact">
-    <div class="container">
-      <h1 class="text-center" id="contact">Contact</h1>
-      <div class="row"">
-        <div class="col-md-6">
-
+  <section id="contact">
+    <h1 class="text-center" id="contact">Contact</h1>
+    <div class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 soc">
+            <div class="" id="btn">
+              <h2>My Info</h2>
+              <button type="button" class="btn btn-li"><i
+                  class="fab fa-linkedin-in fa-lg"></i><span>Linkedin</span></button>
+              <button type="button" class="btn btn-git"><i class="fab fa-github fa-lg"></i><span>Github</span></button>
+            </div>
+            <div class="card">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="fas fa-envelope"></i><span>nubliezrapat@gmail.com</span></li>
+                <li class="list-group-item"><i class="fas fa-map-marker-alt"></i><span> Depok, Indonesia</span></li>
+                <li class="list-group-item"><i class="fas fa-phone-alt"></i><span>+6289510867413</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h2 class="text-center">Send Your Feedback</h2>
+            <div class="row">
+              <div class="col-6">
+                <form action="MAILTO:nubliezrapat@gmail.com" method="post" enctype="text/plain">
+                  <div class="form-group">
+                    <input id="name" class="form-control" type="text" name="name" placeholder="Your Name..">
+                  </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <input id="email" class="form-control" type="text" name="email" placeholder="Email">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea id="message" class="form-control" name="message" rows="3" placeholder="Your Message"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit" value="send">Submit</button>
+            </form>
+          </div>
         </div>
-        <div class="col-md-6 form">
-          <div class="row">
-            <div class="col-6">
-              <form action="MAILTO:nubliezrapat@gmail.com" method="post" enctype="text/plain">
-              <div class="form-group">
-                <input id="name" class="form-control" type="text" name="name" placeholder="Your Name..">
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="form-group">
-                <input id="email" class="form-control" type="text" name="email" placeholder="Email">
-              </div>
+        <h2 class="text-center">Nametag</h2>
+        <div class="inte">
+          <div class="info1">
+            <h5 class="mb-n1">Nubli Marzuki <br>Ramadhan</h5>
+            <small class="userid">Junior Web Developer</small><br>
+            <h5 class="quote">“The most important property of a program is whether it accomplishes the intention of its user”</h5>
+            <div class="socuser">
+              <a href="facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a>
+              <a href="twitter.com"><i class="fab fa-twitter-square fa-2x"></i></a>
+              <a href="instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
             </div>
           </div>
-          <div class="form-group">
-            <textarea id="message" class="form-control" name="message" rows="3" placeholder="Your Message"></textarea>
+          <div class="foto">
           </div>
-          <button class="btn btn-primary" type="submit" value="send">Submit</button>
-          </form>
         </div>
       </div>
     </div>
-  </div>
+    </div>
+    </div>
+    </div>
+  </section>
 
-  <footer id="footer">
-    <p>Anjay</p>
-  </footer>
+  <section>
+    <div class="" id="footer">
+      <small>Copyright 2019 Nubli Marzuki Ramadhan</small>
+    </div>
+  </section>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="js/jquery.min.js"></script>
@@ -183,6 +227,7 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/particles.min.js"></script>
   <script src="js/app.js"></script>
+  <!-- <script src="js/mdb.min.js"></script> -->
   <script src="js/script.js"></script>
 </body>
 

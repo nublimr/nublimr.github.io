@@ -143,7 +143,7 @@
 
 .certif{
     background: #90CAF9;
-    height: 500px;
+    height: auto;
     -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%);
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%);
 }
@@ -153,9 +153,55 @@
     text-align: center;
 }
 
+#certificate .container{
+    font-size: 0;
+    padding-top : 130px;
+    padding-bottom: 130px;
+    display: -ms-flexbox;
+    -ms-flexbox-wrap: wrap;
+    -ms-flexbox-direction: column;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: flex;
+}
+
+#certificate .container div{
+    -webkit-box-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    width: 300px;
+    margin: .5vw;
+}
+
+#certificate .container div img{
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 400px){
+    #certificate .container div{
+        margin: 3px;
+    }
+
+    #certificate .container{
+        padding-top: 100px;
+    }
+}
+
 .contact{
     background: #1ba1e2;
-    height: 1000px;
+    height: auto;
+    padding-bottom: 20px;
     -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
 }
@@ -174,6 +220,10 @@ textarea,input{
     padding: 30px;
 }
 
+#contact h2{
+    margin-bottom: 30px;
+}
+
 #btn{
     left: 0;
     top: 0;
@@ -181,7 +231,7 @@ textarea,input{
 }
 
 #btn button {
-    margin: 5px;
+    margin-right: 5px;
     width: 180px;
     padding: 8px;
     border-radius: 10px;
@@ -225,7 +275,7 @@ button span {
 .inte{
     background: white;
     width: 500px;
-    height: 220px;
+    height: auto;
     margin: auto;
     display: flex;
     margin-top: 20px;
@@ -264,6 +314,22 @@ button span {
     border-bottom-left-radius: 5px;
     z-index: 2;
 }
+
+.vl {
+    display: flex;
+    border-left: 1px solid rgb(48, 48, 48);
+    height: 45px;
+    margin-left: -10px;
+    margin-top: 5px;
+  }
+
+.vl-2 {
+    display: flex;
+    border-left: 1px solid rgb(48, 48, 48);
+    height: 50px;
+    margin-left: -10px;
+    margin-top: 5px;
+  }
 
 .foto{
     background: url(../img/Profile.jpg);

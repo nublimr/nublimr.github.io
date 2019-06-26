@@ -155,7 +155,7 @@
 
 .contact{
     background: #1ba1e2;
-    height: 800px;
+    height: 1000px;
     -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
 }
@@ -381,6 +381,10 @@ button span {
 
 #pro h1{
     margin-bottom: 20px;
+}
+
+.contact{
+    height: 800px;
 }
 
 }

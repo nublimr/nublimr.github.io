@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- <link rel="stylesheet" href="css/mdb.min.css"> -->
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 
   <script src="js/all.min.js"></script>
@@ -32,7 +33,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
             <a class="nav-item nav-link" href="#skill">Skill</a>
-            <a class="nav-item nav-link" href="#project">Project</a>
+            <a class="nav-item nav-link" href="#pro">Project</a>
             <a class="nav-item nav-link" href="#certificate">Certificate</a>
             <a class="nav-item nav-link" href="#contact">Contact</a>
             <a class="nav-item nav-link" href="#footer"></a>
@@ -45,7 +46,7 @@
 
   <!-- Jumbotron -->
   <div id="particles-js">
-    <div class="skill text-center">
+    <div class="skill text-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
       <h1>Junior Web Developer</h1>
       <p>College</p>
       <div class="lang">
@@ -103,15 +104,40 @@
   <section id="pro">
     <h1 class="text-center">Projects</h1>
     <div class="container">
-      <div class=""><a data-toggle="modal" data-target="#exampleModalCenter"><img src="img/janken.png" alt=""></a></div>
-      <div class=""><a data-toggle="modal" data-target="#exampleModalCenter"><img src="img/janken.png" alt=""></a></div>
-      <div class=""><a data-toggle="modal" data-target="#exampleModalCenter"><img src="img/janken.png" alt=""></a></div>
-      <div class=""><a data-toggle="modal" data-target="#exampleModalCenter"><img src="img/janken.png" alt=""></a></div>
-      <div class=""><a data-toggle="modal" data-target="#exampleModalCenter"><img src="img/janken.png" alt=""></a></div>
+      <a data-filter="css" data-toggle="modal" data-target="#exampleModalCenter">
+        <div class="text-center filterDiv html">
+          <img src="img/Jan-Ken-Pon.gif" alt="">
+          <small class="badge badge-danger"><i class="fab fa-html5 fa-lg"></i> HTML</small>
+          <small class="badge badge-primary"><i class="fab fa-css3 fa-lg"></i> CSS</small>
+          <small class="badge badge-warning"><i class="fab fa-js fa-lg"></i> JAVASCRIPT</small>
+          <small class="badge badge-react"><i class="fab fa-react fa-lg"></i> REACT.JS</small>
+          <h5>Fun Game: Jan-Ken-Pon</h5>
+        </div>
+      </a>
+      <a data-filter="css" data-toggle="modal" data-target="#exampleModalCenter">
+        <div class="text-center">
+          <img src="img/janken.png" alt="">
+          <small class="badge badge-danger"><i class="fab fa-html5 fa-lg"></i> HTML</small>
+          <small class="badge badge-primary"><i class="fab fa-css3 fa-lg"></i> CSS</small>
+          <small class="badge badge-warning"><i class="fab fa-js fa-lg"></i> JAVASCRIPT</small>
+          <small class="badge badge-react"><i class="fab fa-react fa-lg"></i> REACT.JS</small>
+          <h5>Fun Game: Jan-Ken-Pon</h5>
+        </div>
+      </a>
+      <a data-filter="react" class="" data-toggle="modal" data-target="#exampleModalCenter">
+        <div class="text-center">
+          <img src="img/janken.png" alt="">
+          <small class="badge badge-danger"><i class="fab fa-html5 fa-lg"></i> HTML</small>
+          <small class="badge badge-primary"><i class="fab fa-css3 fa-lg"></i> CSS</small>
+          <small class="badge badge-warning"><i class="fab fa-js fa-lg"></i> JAVASCRIPT</small>
+          <small class="badge badge-react"><i class="fab fa-react fa-lg"></i> REACT.JS</small>
+          <h5>Fun Game: Jan-Ken-Pon</h5>
+        </div>
+      </a>
     </div>
   </section>
 
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  <div class="modal fade prodal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
@@ -125,7 +151,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-6">
-                <img class="img-fluid" src="img/janken.png" alt="">
+                <img class="img-fluid" src="img/Jan-Ken-Pon.gif" alt="">
               </div>
               <div class="col-md-6">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
@@ -134,7 +160,8 @@
           </div>
         </div>
         <div class="modal-footer">
-          <a href="github.com"><button class="btn btn-primary" type="button">Source Code</button></a>
+          <a href="github.com"><button class="btn btn-primary" type="button"><i class="fab fa-github fa-lg"></i> Github</button></a>
+          <a href="codepen.com"><button class="btn btn-primary" type="button"><i class="fab fa-codepen fa-lg"></i> Code</button></a>
           <a href="portfolio/Jangken/index.html"><button class="btn btn-success" type="button">Demo</button></a>
         </div>
       </div>
@@ -148,9 +175,8 @@
     </div>
     <div class="certif">
       <div class="container">
-        <div class=""><a data-toggle="modal" data-target="#exampleModalCenter"><img src="img/C-.png" alt=""></a></div>
-        <div class=""><a data-toggle="modal" data-target="#exampleModalCenter"><img src="img/Java.png" alt=""></a></div>
-        Java.png
+        <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><div data-aos="fade-right" data-aos-anchor-placement="top-bottom"><img src="img/C-.png" alt=""></div></a>
+        <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><div data-aos="fade-left" data-aos-anchor-placement="top-bottom"><img src="img/Java.png" alt=""></div></a>
       </div>
   </section>
 
@@ -214,9 +240,9 @@
             <div class="row">
               <div class="col-8">
                 <div class="socuser">
-                  <a href="facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a>
-                  <a href="twitter.com"><i class="fab fa-twitter-square fa-2x"></i></a>
-                  <a href="instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+                  <a href="http://facebook.com/"><i class="fab fa-facebook-square fa-2x"></i></a>
+                  <a href="http://twitter.com/"><i class="fab fa-twitter-square fa-2x"></i></a>
+                  <a href="http://instagram.com/"><i class="fab fa-instagram fa-2x"></i></a>
                 </div>
               </div>
               <div class="col-4">
@@ -247,6 +273,7 @@
   <script src="js/particles.min.js"></script>
   <script src="js/app.js"></script>
   <!-- <script src="js/mdb.min.js"></script> -->
+  <script src="js/aos.js"></script>
   <script src="js/script.js"></script>
 </body>
 

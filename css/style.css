@@ -9,6 +9,7 @@
     margin-top: 20px;
     font-family: 'Lily Script One', cursive;
     letter-spacing: 3px;
+    font-size: 14px
 }
 
 #particles-js{
@@ -395,6 +396,7 @@ button span {
     margin-top: 25px;
     font-family: 'Lily Script One', cursive;
     letter-spacing: 3px;
+    font-size: 18px
 }
 
 .nav-item{
